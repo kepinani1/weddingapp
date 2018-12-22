@@ -109,7 +109,7 @@ var orm = {
       cb(err, result)
     });
   },
-  create: function (tableInput, cols_vals, cb) {
+  createUser: function (tableInput, cols_vals, cb) {
     var queryString = "INSERT INTO ?? set ?";
     connection.query(queryString, [tableInput, cols_vals], function (err, result) {
       if (err) throw err;
